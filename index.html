@@ -36,20 +36,20 @@
       font-weight: bold;
       color: #0073e6;
     }
-    .glossary {
-      margin: 20px;
-      padding: 10px;
-      background-color: #eaf4ff;
-      border-radius: 8px;
+    .code {
+    text-align: left;
+      background-color: #e8f0fe;
+      font-family: Consolas, monospace;
+      padding: 5px;
+      display: inline-block;
+      border-radius: 3px;
+      color: #333;
     }
-    .glossary a {
-      color: #0073e6;
-      text-decoration: none;
-      margin-right: 10px;
-    }
-    .glossary a:hover {
-      text-decoration: underline;
-    }
+    .comment { color: #6a737d; }
+    .keyword { color: #d73a49; }
+    .variable { color: #6f42c1; }
+    .number { color: #005cc5; }
+    .string { color: #032f62; }
   </style>
 </head>
 <body>
@@ -100,11 +100,12 @@
 <!-- Question 1 -->
 <div id="q1" class="question">
   <p>Question 1: Declare a variable named <span class="highlight">myVar</span> and set it to <span class="highlight">5</span>.</p>
+  <p><span class="code"><span class="keyword">let</span> <span class="variable">myVar</span>; <span class="comment">// Adjust this line to pass the test</span></span></p>
   <p id="result1" class="fail">FAIL</p>
   <script>
     addQuestion("q1", "Question 1"); // Add question to glossary object
 
-    let myVar; // Adjust this line to pass the test
+    let myVar = 0; // Adjust this line to pass the test
     document.getElementById("result1").textContent = myVar === 5 ? "PASS" : "FAIL";
     document.getElementById("result1").className = myVar === 5 ? "pass" : "fail";
   </script>
@@ -113,11 +114,12 @@
 <!-- Question 2 -->
 <div id="q2" class="question">
   <p>Question 2: Change <span class="highlight">myString</span> to "Hello, World!".</p>
+  <p><span class="code"><span class="keyword">let</span> <span class="variable">myString</span>; <span class="comment">// Adjust this line to pass the test</span></span></p>
   <p id="result2" class="fail">FAIL</p>
   <script>
     addQuestion("q2", "Question 2"); // Add question to glossary object
 
-    let myString; // Adjust this line to pass the test
+    let myString = ""; // Adjust this line to pass the test
     document.getElementById("result2").textContent = myString === "Hello, World!" ? "PASS" : "FAIL";
     document.getElementById("result2").className = myString === "Hello, World!" ? "pass" : "fail";
   </script>
@@ -126,12 +128,14 @@
 <!-- Question 3 -->
 <div id="q3" class="question">
   <p>Question 3: Use the <span class="highlight">==</span> operator to compare <span class="highlight">num</span> to <span class="highlight">10</span>.</p>
+  <p><span class="code"><span class="keyword">let</span> <span class="variable">num</span> = <span class="number">10</span>;</span><br>
+  <span class="code"><span class="keyword">let</span> <span class="variable">isEqual</span> = <span class="number">false</span>; <span class="comment">// Adjust this line to pass the test</span></span></p>
   <p id="result3" class="fail">FAIL</p>
   <script>
     addQuestion("q3", "Question 3"); // Add question to glossary object
 
     let num = 10;
-    let isEqual = false; // Adjust this line to pass the test
+    let isEqual = (num === 5); // Adjust this line to pass the test
     document.getElementById("result3").textContent = isEqual === (num == 10) ? "PASS" : "FAIL";
     document.getElementById("result3").className = isEqual === (num == 10) ? "pass" : "fail";
   </script>
@@ -140,13 +144,14 @@
 <!-- Question 4 -->
 <div id="q4" class="question">
   <p>Question 4: Complete the <span class="highlight">if</span> statement so that it runs when <span class="highlight">score</span> is greater than or equal to <span class="highlight">50</span>.</p>
+  <p><span class="code"><span class="keyword">if</span> (score <span class="keyword">&gt;</span> <span class="number">0</span>) {<br> &nbsp;&nbsp;<span class="variable">passTest</span> = <span class="number">true</span>;<br>}</span></p>
   <p id="result4" class="fail">FAIL</p>
   <script>
     addQuestion("q4", "Question 4"); // Add question to glossary object
 
     let score = 50;
     let passTest = false;
-    if (passTest) {
+    if (score > 100) { // Adjust this line to pass the test
       passTest = true;
     }
     document.getElementById("result4").textContent = passTest ? "PASS" : "FAIL";
