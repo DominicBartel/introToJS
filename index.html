@@ -75,7 +75,12 @@
             color: #032f62;
         }
         .linksContainer{
+            text-align: left;
             display: grid;
+        }
+        .glossary{
+            display: grid;
+            justify-content: center;
         }
 
     </style>
@@ -126,7 +131,7 @@
                     class="comment">// Adjust this line to pass the test</span></span></p>
         <p id="result1" class="fail">FAIL</p>
         <script>
-            addQuestion("q1", "Question 1"); // Add question to glossary object
+            addQuestion("q1", "Question 1: Declare a variable named myVar and set it to 5."); // Add question to glossary object
 
             let myVar = 0; // Adjust this line to pass the test
             document.getElementById("result1").textContent = myVar === 5 ? "PASS" : "FAIL";
@@ -141,7 +146,7 @@
                     class="comment">// Adjust this line to pass the test</span></span></p>
         <p id="result2" class="fail">FAIL</p>
         <script>
-            addQuestion("q2", "Question 2"); // Add question to glossary object
+            addQuestion("q2", "Question 2: Change myString to 'Hello, World!'."); // Add question to glossary object
 
             let myString = ""; // Adjust this line to pass the test
             document.getElementById("result2").textContent = myString === "Hello, World!" ? "PASS" : "FAIL";
@@ -161,7 +166,7 @@
         </p>
         <p id="result3" class="fail">FAIL</p>
         <script>
-            addQuestion("q3", "Question 3"); // Add question to glossary object
+            addQuestion("q3", "Question 3: Use the == operator to compare num to 10."); // Add question to glossary object
 
             let num = 10;
             let isEqual = (num === 5); // Adjust this line to pass the test
@@ -179,7 +184,7 @@
                     class="number">true</span>;<br>}</span></p>
         <p id="result4" class="fail">FAIL</p>
         <script>
-            addQuestion("q4", "Question 4"); // Add question to glossary object
+            addQuestion("q4", "Question 4: Complete the if statement so that it runs when score is greater than or equal to 50.");// Add question to glossary object
 
             let score = 50;
             let passTest = false;
@@ -198,7 +203,8 @@
                 &nbsp;&nbsp;<span class="keyword">return</span> <span class="string">""</span>;<br>}</span></p>
         <p id="result5" class="fail">FAIL</p>
         <script>
-            addQuestion("q5", "Question 5"); // Add question to glossary object
+            addQuestion("q5", "Question 5: Define a function named greet that returns 'Hello!'.");
+            // Add question to glossary object
 
             function greet() {
                 return ""; // Adjust this line to pass the test
@@ -217,7 +223,7 @@
                     class="variable">count</span>++;<br>}</span></p>
         <p id="result6" class="fail">FAIL</p>
         <script>
-            addQuestion("q6", "Question 6"); // Add question to glossary object
+            addQuestion("q6", "Question 6: Correct the for loop so it runs 5 times."); // Add question to glossary object
 
             let count = 0;
             for (let i = 0; i < 1; i++) { // Adjust this line to pass the test
@@ -237,7 +243,8 @@
         </p>
         <p id="result7" class="fail">FAIL</p>
         <script>
-            addQuestion("q7", "Question 7"); // Add question to glossary object
+            addQuestion("q7", "Question 7: Initialize sum to be the total of a and b.");
+            // Add question to glossary object
 
             let a = 3;
             let b = 7;
@@ -255,7 +262,7 @@
                     class="comment">// Adjust this line to pass the test</span></span></p>
         <p id="result8" class="fail">FAIL</p>
         <script>
-            addQuestion("q8", "Question 8"); // Add question to glossary object
+            addQuestion("q8", "Question 8: Use push to add the number 5 to numbers array.");// Add question to glossary object
 
             let numbers = [];
             numbers.push(); // Adjust this line to pass the test
@@ -274,7 +281,8 @@
                 class="comment">// Adjust this line to pass the test</span></p>
         <p id="result9" class="fail">FAIL</p>
         <script>
-            addQuestion("q9", "Question 9"); // Add question to glossary object
+            addQuestion("q9", "Question 9: Set message to 'You passed!' if value is greater than or equal to 70.");
+            // Add question to glossary object
 
             let value = 80;
             let message = "";
@@ -299,7 +307,8 @@
         </p>
         <p id="result10" class="fail">FAIL</p>
         <script>
-            addQuestion("q10", "Question 10"); // Add question to glossary object
+            addQuestion("q10", "Question 10: Set greeting to 'Good Morning' if hour is less than 12.");
+            // Add question to glossary object
 
             let hour = 8;
             let greeting = "";
@@ -321,7 +330,8 @@
         </p>
         <p id="result11" class="fail">FAIL</p>
         <script>
-            addQuestion("q11", "Question 11"); // Add question to glossary object
+            addQuestion("q11", "Question 11: Create a variable called age and set it to the value 25.");
+            // Add question to glossary object
 
             let age = 0; // Adjust this line to pass the test
             document.getElementById("result11").textContent = age === 25 ? "PASS" : "FAIL";
@@ -337,7 +347,8 @@
                 class="comment">// Adjust this line to pass the test</span></p>
         <p id="result12" class="fail">FAIL</p>
         <script>
-            addQuestion("q12", "Question 12"); // Add question to glossary object
+            addQuestion("q12", "Question 12: Create an array called fruits that contains the strings 'apple' and 'banana'.");
+            // Add question to glossary object
 
             let fruits = []; // Adjust this line to pass the test
             document.getElementById("result12").textContent = JSON.stringify(fruits) === '["apple","banana"]' ? "PASS" : "FAIL";
@@ -355,7 +366,8 @@
                 Adjust this line to pass the test</span></p>
         <p id="result13" class="fail">FAIL</p>
         <script>
-            addQuestion("q13", "Question 13"); // Add question to glossary object
+            addQuestion("q13", "Question 13: Define a function named double that doubles any number it receives as a parameter.");
+            // Add question to glossary object
 
             function double(num) {
                 return num * 1; // Adjust this line to pass the test
@@ -374,7 +386,8 @@
         </p>
         <p id="result14" class="fail">FAIL</p>
         <script>
-            addQuestion("q14", "Question 14"); // Add question to glossary object
+            addQuestion("q14", "Question 14: Initialize total to be the length of the colors array.");
+            // Add question to glossary object
 
             let colors = ["red", "green", "blue"];
             let total = 0; // Adjust this line to pass the test
@@ -392,7 +405,8 @@
                 test</span></p>
         <p id="result15" class="fail">FAIL</p>
         <script>
-            addQuestion("q15", "Question 15"); // Add question to glossary object
+            addQuestion("q15", "Question 15: Set isPositive to true if num is greater than zero.");
+            // Add question to glossary object
 
             let num = 10;
             let isPositive = false; // Adjust this line to pass the test
