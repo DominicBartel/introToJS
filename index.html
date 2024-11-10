@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Beginner Questions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f8ff;
+      color: #333;
+    }
+    h1, h2 {
+      color: #0073e6;
+    }
+    .question {
+      margin: 20px auto;
+      padding: 15px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+    .question p {
+      font-weight: bold;
+    }
+    .fail {
+      color: red;
+    }
+    .pass {
+      color: green;
+    }
+    .highlight {
+      font-style: italic;
+      font-weight: bold;
+      color: #0073e6;
+    }
+    .glossary {
+      margin: 20px;
+      padding: 10px;
+      background-color: #eaf4ff;
+      border-radius: 8px;
+    }
+    .glossary a {
+      color: #0073e6;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+    .glossary a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<h1>JavaScript Beginner Questions</h1>
+<p>Master the basics of JavaScript, from variables to loops and functions. Each question has logic that can be adjusted from <span class="highlight">FAIL</span> to <span class="highlight">PASS</span> by making corrections to the code.</p>
+
+<div class="glossary">
+  <h2>Glossary</h2>
+  <a href="#q1">Question 1</a><a href="#q2">Question 2</a><a href="#q3">Question 3</a><a href="#q4">Question 4</a> ...
+  <!-- Continue linking to questions as needed -->
+</div>
+
+<h2>Topics Covered</h2>
+<ul>
+  <li><span class="highlight">Variables</span> - Declaring and initializing variables</li>
+  <li><span class="highlight">Data Types</span> - String, Number, Boolean</li>
+  <li><span class="highlight">Operators</span> - Basic arithmetic and comparison</li>
+  <li><span class="highlight">Conditionals</span> - if-else structures</li>
+  <li><span class="highlight">Loops</span> - for and while loops</li>
+  <li><span class="highlight">Functions</span> - Declaring and calling functions</li>
+</ul>
+
+<!-- Question 1 -->
+<div id="q1" class="question">
+  <p>Question 1: Declare a variable named <span class="highlight">myVar</span> and set it to <span class="highlight">5</span>.</p>
+  <p id="result1" class="fail">FAIL</p>
+  <script>
+    let myVar; // Adjust this line to pass the test
+    document.getElementById("result1").textContent = myVar === 5 ? "PASS" : "FAIL";
+    document.getElementById("result1").className = myVar === 5 ? "pass" : "fail";
+  </script>
+</div>
+
+<!-- Question 2 -->
+<div id="q2" class="question">
+  <p>Question 2: Change <span class="highlight">myString</span> to "Hello, World!".</p>
+  <p id="result2" class="fail">FAIL</p>
+  <script>
+    let myString; // Adjust this line to pass the test
+    document.getElementById("result2").textContent = myString === "Hello, World!" ? "PASS" : "FAIL";
+    document.getElementById("result2").className = myString === "Hello, World!" ? "pass" : "fail";
+  </script>
+</div>
+
+<!-- Question 3 -->
+<div id="q3" class="question">
+  <p>Question 3: Use the <span class="highlight">==</span> operator to compare <span class="highlight">num</span> to <span class="highlight">10</span>.</p>
+  <p id="result3" class="fail">FAIL</p>
+  <script>
+    let num = 10;
+    let isEqual = false; // Adjust this line to pass the test
+    document.getElementById("result3").textContent = isEqual === (num == 10) ? "PASS" : "FAIL";
+    document.getElementById("result3").className = isEqual === (num == 10) ? "pass" : "fail";
+  </script>
+</div>
+
+<!-- Question 4 -->
+<div id="q4" class="question">
+  <p>Question 4: Complete the <span class="highlight">if</span> statement so that it runs when <span class="highlight">score</span> is greater than or equal to <span class="highlight">50</span>.</p>
+  <p id="result4" class="fail">FAIL</p>
+  <script>
+    let score = 50;
+    let passTest = false;
+    if (/* Adjust this line */) {
+      passTest = true;
+    }
+    document.getElementById("result4").textContent = passTest ? "PASS" : "FAIL";
+    document.getElementById("result4").className = passTest ? "pass" : "fail";
+  </script>
+</div>
+
+<!-- Question 5 -->
+<div id="q5" class="question">
+  <p>Question 5: Change <span class="highlight">result</span> to <span class="highlight">true</span> if <span class="highlight">x</span> is less than <span class="highlight">y</span>.</p>
+  <p id="result5" class="fail">FAIL</p>
+  <script>
+    let x = 5, y = 10;
+    let result = false; // Adjust this line to pass the test
+    document.getElementById("result5").textContent = result === (x < y) ? "PASS" : "FAIL";
+    document.getElementById("result5").className = result === (x < y) ? "pass" : "fail";
+  </script>
+</div>
+
+<!-- Question 6 -->
+<div id="q6" class="question">
+  <p>Question 6: Write a <span class="highlight">for loop</span> that counts from 1 to 5 and assigns the last count to <span class="highlight">lastCount</span>.</p>
+  <p id="result6" class="fail">FAIL</p>
+  <script>
+    let lastCount = 0;
+    // Adjust this loop to pass the test
+    document.getElementById("result6").textContent = lastCount === 5 ? "PASS" : "FAIL";
+    document.getElementById("result6").className = lastCount === 5 ? "pass" : "fail";
+  </script>
+</div>
+
+<!-- Question 7 -->
+<div id="q7" class="question">
+  <p>Question 7: Change <span class="highlight">numArray</span> to contain numbers <span class="highlight">1, 2, 3</span>.</p>
+  <p id="result7" class="fail">FAIL</p>
+  <script>
+    let numArray = []; // Adjust this line to pass the test
+    document.getElementById("result7").textContent = JSON.stringify(numArray) === "[1,2,3]" ? "PASS" : "FAIL";
+    document.getElementById("result7").className = JSON.stringify(numArray) === "[1,2,3]" ? "pass" : "fail";
+  </script>
+</div>
+
+<!-- Question 8 -->
+<div id="q8" class="question">
+  <p>Question 8: Set <span class="highlight">message</span> to the sum of <span class="highlight">a + b</span>.</p>
+  <p id="result8" class="fail">FAIL</p>
+  <script>
+    let a = 5, b = 7;
+    let message; // Adjust this line to pass the test
+    document.getElementById("result8").textContent = message === a + b ? "PASS" : "FAIL";
+    document.getElementById("result8").className = message === a + b ? "pass" : "fail";
+  </script>
+</div>
+
+<!-- Question 9 -->
+<div id="q9" class="question">
+  <p>Question 9: Use the <span class="highlight">concat()</span> method to join <span class="highlight">first</span> and <span class="highlight">last</span> into <span class="highlight">fullName</span>.</p>
+  <p id="result9" class="fail">FAIL</p>
+  <script>
+    let first = "Jane", last = "Doe";
+    let fullName; // Adjust this line to pass the test
+    document.getElementById("result9").textContent = fullName === "Jane Doe" ? "PASS" : "FAIL";
+    document.getElementById("result9").className = fullName === "Jane Doe" ? "pass" : "fail";
+  </script>
+</div>
+
+<!-- Add similar questions from 10 to 20 -->
+
+</body>
+</html>
