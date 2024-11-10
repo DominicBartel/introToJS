@@ -93,7 +93,7 @@
         adjusted from <span class="highlight">FAIL</span> to <span class="highlight">PASS</span> by making corrections
         to the code.</p>
 
-    <div class="glossary" id="glossary">
+    <div class="glossary question" id="glossary">
         <h2>Glossary</h2>
         <!-- Glossary links will be generated here by JavaScript -->
     </div>
@@ -351,8 +351,8 @@
             // Add question to glossary object
 
             let fruits = []; // Adjust this line to pass the test
-            document.getElementById("result12").textContent = JSON.stringify(fruits) === '["apple","banana"]' ? "PASS" : "FAIL";
-            document.getElementById("result12").className = JSON.stringify(fruits) === '["apple","banana"]' ? "pass" : "fail";
+            document.getElementById("result12").textContent = fruits.includes("apple") && fruits.includes("banana") ? "PASS" : "FAIL";
+            document.getElementById("result12").className = fruits.includes("apple") && fruits.includes("banana") ? "pass" : "fail";
         })()</script>
     </div>
 
